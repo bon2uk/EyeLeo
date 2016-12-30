@@ -1,0 +1,123 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+body 
+.homesection
+	background-color: #fff
+	position: relative
+.article-1
+	width: 100%
+	background-color: #f5f9f7
+	text-align: center
+	position: relative
+	display: block
+	h3
+		font-size: em(34px)
+	p 	
+		font-size: em(22.5px)
+		padding-bottom: 50px
+.article-2
+	width: 100%
+	background-color: #f5f9f7
+	position: relative
+	text-align: center
+	top: 60px
+	margin-bottom: 50px
+	img 
+		padding-bottom: 25px
+		padding-right: 10px
+	h3 
+		display: inline-block
+		font-size: em(59px)
+		margin-top: 100px
+		margin-bottom: 100px
+	button
+		font-size: em(30px)
+		padding: 15px 30px
+		text-decoration: none
+		border: none
+		background-color: #347a51
+		margin-top: 100px
+		margin-bottom: 100px	
+footer
+	position: relative
+	padding-top: 10px
+	padding-bottom: 100px
+	text-align: center
+	font-size: em(20px)
+	text-decoration: none
+	line-height: 55px
+	a 
+		margin-right: 35px
+		margin-left: 35px
+		color: #000	
+		cursor: pointer
+	a:hover 
+		color: #000
+	p 
+		font-size: em(20px)
+		margin-top: 40px
+.paws
+	
+.triangle_down
+	color: #000
+	text-align: center
+	overflow: hidden
+	position: relative
+	padding-bottom: 56px
+	&:after 
+		position: absolute
+		left: 0
+		content: ""
+		width: 100%
+		height: 56px
+		background-image: linear-gradient(to top right, #fff 48%, transparent 2%, transparent 50%), linear-gradient(to top left, #fff 48%, transparent 2%, transparent 50%)
+		background-position: top left, top right
+		background-repeat: no-repeat
+		background-size: 52.2% 100%
+.triangle_up
+	color: #000
+	text-align: center
+	overflow: hidden
+	position: relative
+	padding-bottom: 56px
+	transform: rotate(180deg)
+	margin-bottom: 50px
+	&:after 
+		position: absolute
+		left: 0
+		content: ""
+		width: 100%
+		height: 56px
+		background-image: linear-gradient(to top right, #fff 48%, transparent 2%, transparent 50%), linear-gradient(to top left, #fff 48%, transparent 2%, transparent 50%)
+		background-position: top left, top right
+		background-repeat: no-repeat
+		background-size: 52.5% 100%
+
+//ALWAYS END
+@import "media"
